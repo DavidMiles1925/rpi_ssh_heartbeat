@@ -36,7 +36,11 @@ rpis = {
     "rpi_1": {"ip": "192.168.0.111", "user": "squirtle"},
     "rpi_2": {"ip": "192.168.0.120", "user": "pikachu"},
 }
+
+NTFY_TOPIC = "your-topic-name"
 ```
+
+See [Notification](#notifications-ntfy)
 
 ### `.gitignore`
 
