@@ -15,7 +15,7 @@ import subprocess
 import time
 import urllib.request
 
-from config import rpis
+from config import rpis, ntfy_topic
 
 # --- Configuration ---
 RPIS = rpis
@@ -28,7 +28,7 @@ RETRY_DELAY = 2  # seconds between retry attempts
 LOG_FILE = os.path.expanduser("~/rpi_ssh_check.log")
 SSH_BINARY = shutil.which("ssh")
 
-NTFY_TOPIC = "davidmilestapoautomation"
+NTFY_TOPIC = ntfy_topic
 NTFY_URL = f"https://ntfy.sh/{NTFY_TOPIC}"
 # ----------------------
 
