@@ -53,7 +53,7 @@ def setup_logger(log_file):
     return logger
 
 
-def check_with_ssh(ip, username, key_path=None, port=22, timeout=6):
+def check_with_ssh(ip, username, key_path=None, port=22, timeout=10):
     cmd = [
         SSH_BINARY,
         "-o", "BatchMode=yes",
